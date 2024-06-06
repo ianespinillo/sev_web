@@ -1,0 +1,146 @@
+/* Estilos generales */
+* {
+    transition: all 0.3s;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #4472dd;
+    font-size: 27px;
+    transition: ease-in 300ms;
+}
+
+/* Cuerpo */
+body {
+    background: #4472dd;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Calibri', sans-serif;
+    font-size: 120%;
+}
+
+/* Contenedor de la trivia */
+.cont-trivia {
+    display: grid;
+    justify-content: center;
+    width: 100vw;
+}
+
+.contenedor {
+    width: 78vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Encabezado de la pregunta */
+.encabezado {
+    position: relative;
+    display: block;
+    margin: auto;
+    background: white;
+    width: 80vw;
+    border-radius: 30px;
+    max-width: 600px;
+}
+
+.pregunta {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.imagen {
+    object-fit: cover;
+    height: auto;
+    width: 225px;
+}
+
+/* Botones de respuesta */
+.contBtn {
+    align-items: center;
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    border-radius: 25px;
+    background: white;
+    outline: 1px solid black;
+    border: 0;
+    width: 100%;
+    max-width: 550px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    height: 40px;
+    position: relative;
+    left: 15px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    color: #537FE7;
+    transition: 500ms;
+}
+
+/* Puntaje */
+.puntaje {
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+
+/* Estilos para respuestas incorrectas y correctas */
+.incorrecto {
+    background-color: rgb(247, 62, 62);
+    transition: ease-in 300ms;
+}
+
+.correcto {
+    background-color: rgb(3, 224, 3);
+    transition: ease-in 300ms;
+}
+
+.tiempo{
+    width: 650px;
+    height: 25px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.progreso{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: green;
+    animation: load 8s linear;
+}
+
+@keyframes load {
+    100%{width:0%; background-color: red};
+}
+

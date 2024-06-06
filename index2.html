@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego de preguntas</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="styles/style_trivia.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./index.html" class="nav-link">Inicio</a>
+    </nav>
+  </header>
+  <!-- Contenido principal -->
+  <section class="cont-trivia">
+    <!-- Puntaje del juego -->
+    <div class="puntaje" id="puntaje"></div>
+    <div class="tiempo">
+      <span class="progreso"></span>
+    </div>
+    <div class="encabezado">
+      <!-- Pregunta del juego -->
+      <div class="pregunta" id="pregunta">¿Cuál es la señal?</div>
+      <!-- Imagen relacionada con la pregunta -->
+      <img src="#" class="imagen" id="imagen">
+    </div>
+    <!-- Botones de respuesta -->
+    <div class="contBtn">
+      <button class="btn" id="btn1"></button>
+      <button class="btn" id="btn2"></button>
+      <button class="btn" id="btn3"></button>
+      <button class="btn" id="btn4"></button>
+    </div>
+  </section>
+  <!-- Script JavaScript para el juego -->
+  <script src="index2.js"></script>
+</body>
+</html>
